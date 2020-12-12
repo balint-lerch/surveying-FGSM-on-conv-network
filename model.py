@@ -21,7 +21,7 @@ model.add(keras.layers.Conv2D(64, (3, 3), input_shape=(28, 28, 1), activation='r
 model.add(keras.layers.MaxPool2D(2, 2))
 model.add(keras.layers.Dropout(0.3))
 model.add(keras.layers.Conv2D(64, (3, 3), activation='relu'))
-model.add(keras.layers.MaxPooling2D(2, 2))
+model.add(keras.layers.MaxPool2D(2, 2))
 model.add(keras.layers.Dropout(0.3))
 model.add(keras.layers.Flatten())
 model.add(keras.layers.Dense(128, activation="relu"))
